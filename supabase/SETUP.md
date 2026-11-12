@@ -1,0 +1,21 @@
+# Connect the existing website
+
+The upgrade is prepared but must not replace the live site until these steps pass. No Supabase connection is currently configured. Existing browser records have not been read, imported, or reset.
+
+1. Create or select a Supabase project you control. Run `001_cloud.sql` once in its SQL editor (transactional, non-destructive; if any named tables already exist, stop and inspect the existing schema first).
+2. Enable Email authentication and email confirmation. Set minimum password length to at least 8. Configure production SMTP to deliver signup/verification/reset emails to your intended users.
+3. Set Site URL and allowed redirect URL to `https://my-japanese-journey-zhi-teng.successfuleave32.chatgpt.site/`. Add only specific trusted development origins if needed.
+4. Provide the project URL and the **publishable/anon client key**. These are public frontend configuration. Never put a secret or service-role key in NEXT_PUBLIC variables. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in the build environment and rebuild the static Next.js export. Changing hosting runtime environment variables alone cannot update a static export.
+5. Test registration, verification, password login, refresh, password recovery, logout, and session expiry with two independent accounts. Verify a fresh account starts with no progress. Test authenticated direct API access cannot read/write another user's records and anonymous requests cannot read private data. Check two concurrent saves preserve records using revision retries. This live integration verification has not yet run.
+6. Sign up your own account and verify it. In SQL editor, optionally grant curriculum administration to your verified account UUID: `insert into public.journey_admins(user_id) values ('YOUR_VERIFIED_USER_UUID');`. No first-user or email-based automatic administrator assignment exists.
+7. Open the same published origin in the browser where you previously studied. Settings → Import original learning records. Download the exact raw backup, review records and target email, confirm ownership, then import. If the original data was on another origin/device, export it there and select the JSON file here. Only the actual original key `japanese-journey-v1` is scanned; the old application never used IndexedDB.
+8. Imports preserve original JSON both locally and in an account-bound cloud receipt. They deduplicate matching IDs and refuse conflicting IDs. On conflict, export cloud records too and reconcile the conflicting records before importing; neither source is silently overwritten. Cloud preferences are retained and original preferences remain in the raw backup. Records with timestamps retain them; older lesson statuses without timestamps are not assigned invented dates. Full wrong answers remain in attempts.
+9. Publish only after configuration and live integration checks pass. Site audience is currently owner-only; making this available to other people also requires an explicit Site access change.
+
+## Storage and concurrency
+Private profile state is stored as complete JSONB per authenticated UUID, with RLS plus restricted RPC functions. Direct profile updates are revoked; writes use transaction locks and an expected revision and user UUID. No learning records are cached locally for authenticated sessions. Focus/online events and 30-second visible-page polling refresh other-device updates. Offline saves fail visibly; no fake success is shown and no cross-account offline queue exists.
+
+Raw imports are SHA-256 checked in the database and claimed per source hash. A transaction updates state and stores the raw receipt together. Duplicate imports return without applying state again. The UI reads back the receipt and profile before marking the local migration complete. Local originals and backups are never automatically deleted.
+
+## Validation performed locally
+Six unit tests cover independent empty state, historical records/answers/timestamps, idempotent merge, conflict detection, malformed backup rejection, and SHA-256 identity. TypeScript and production build must pass before saving. Live Supabase auth, SQL execution, RLS and concurrent RPC integration tests require the configured project and remain pending.

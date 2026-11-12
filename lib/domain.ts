@@ -1,0 +1,16 @@
+import type {Question,Lesson} from './content';
+export type LearningStatus='new'|'learning'|'mastered';
+export type Attempt={id:string;lessonId:string;at:string;score:number;total:number;answers:Record<string,string[]>;questions:Question[]};
+export type Event={id:string;at:string;kind:string;label:string};
+export type State={version:1;practiceRuns?:import("./practice").Run[];timezone?:string;locale?:"zh"|"en";profile?:{name:string;avatar:string};katakana?:Record<string,{correct:number;total:number}>;unlocked?:string[];reminderConfig?:{enabled:boolean;time:string;days:number[];timezone:string};lessons:Record<string,{status:'started'|'completed'}>;vocabulary:Record<string,{status:LearningStatus;favorite:boolean}>;hiragana:Record<string,{correct:number;total:number}>;attempts:Attempt[];events:Event[];sessions:{id:string;at:string;seconds:number}[];preferences:{dark:boolean;romaji:boolean;reminder:boolean};customLessons:Lesson[]};
+export const labels={new:'未学习',learning:'学习中',mastered:'已掌握'};
+export function initialState():State{return {version:1,lessons:{'lesson-1':{status:'started'}},vocabulary:{},hiragana:{},attempts:[],events:[],sessions:[],preferences:{dark:false,romaji:true,reminder:true},customLessons:[]}}
+const norm=(s:string)=>s.trim().toLowerCase().replace(/\s+/g,' ');
+export function isCorrect(q:Question,a:string[]){if(q.type==='matching')return a.length===q.correct.length&&a.every((v,i)=>norm(v)===norm(q.correct[i]));const aa=[...new Set(a.map(norm))].sort(),bb=[...new Set(q.correct.map(norm))].sort();return aa.length===bb.length&&aa.every((v,i)=>v===bb[i])}
+export function scoreQuiz(q:Question[],a:Record<string,string[]>){return {score:q.filter(x=>isCorrect(x,a[x.id]||[])).length,total:q.length}}
+export function stats(s:State){const total=s.attempts.reduce((n,a)=>n+a.total,0);return {started:Object.keys(s.lessons).length,completed:Object.values(s.lessons).filter(x=>x.status==='completed').length,mastered:Object.values(s.vocabulary).filter(x=>x.status==='mastered').length,kana:Object.values(s.hiragana).filter(x=>x.correct>=3&&x.correct/x.total>=.8).length,accuracy:total?Math.round(100*s.attempts.reduce((n,a)=>n+a.score,0)/total):null,minutes:Math.floor(s.sessions.reduce((n,x)=>n+x.seconds,0)/60)}}
+export function dateKey(d:Date){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kuala_Lumpur',year:'numeric',month:'2-digit',day:'2-digit'}).format(d)}
+export function weekActivity(s:State,now=new Date()){return Array.from({length:7},(_,i)=>{const date=new Date(now.getTime()-(6-i)*86400000);return {day:new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Kuala_Lumpur',weekday:'short'}).format(date),count:s.events.filter(e=>dateKey(new Date(e.at))===dateKey(date)).length}})}
+export function nextSunday(now=new Date()){const local=new Date(now.getTime()+8*3600000),t=new Date(Date.UTC(local.getUTCFullYear(),local.getUTCMonth(),local.getUTCDate(),7));t.setUTCDate(t.getUTCDate()+(7-local.getUTCDay())%7);if(t<=local)t.setUTCDate(t.getUTCDate()+7);return new Date(t.getTime()-8*3600000)}
+export function lessonPassed(s:State,id:string){return s.lessons[id]?.status==='completed'&&s.attempts.some(a=>a.lessonId===id&&a.total>0&&a.score/a.total>=.8)}
+export function lessonUnlocked(s:State,n:number){return n===1||!!s.unlocked?.includes('lesson-'+n)||!!s.lessons['lesson-'+n]||lessonPassed(s,'lesson-'+(n-1))}

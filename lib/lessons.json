@@ -1,0 +1,1732 @@
+[
+  {
+    "id": "lesson-2",
+    "number": 2,
+    "title": "礼貌与感谢",
+    "subtitle": "Polite expressions",
+    "minutes": 8,
+    "objectives": [
+      "理解礼貌与感谢的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "不好意思。 すみません 可用于引起注意或道歉。ありがとう 对熟人表达感谢；正式场合用 ありがとうございます。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l2-w0",
+        "jp": "ありがとう",
+        "kana": "ありがとう",
+        "romaji": "Arigatou",
+        "zh": "谢谢",
+        "tip": "跟读 Arigatou，按假名逐拍读；长音多保持一拍。",
+        "category": "礼貌与感谢"
+      },
+      {
+        "id": "l2-w1",
+        "jp": "すみません",
+        "kana": "すみません",
+        "romaji": "Sumimasen",
+        "zh": "不好意思",
+        "tip": "跟读 Sumimasen，按假名逐拍读；长音多保持一拍。",
+        "category": "礼貌与感谢"
+      },
+      {
+        "id": "l2-w2",
+        "jp": "お願いします",
+        "kana": "おねがいします",
+        "romaji": "Onegaishimasu",
+        "zh": "拜托了",
+        "tip": "跟读 Onegaishimasu，按假名逐拍读；长音多保持一拍。",
+        "category": "礼貌与感谢"
+      },
+      {
+        "id": "l2-w3",
+        "jp": "どうぞ",
+        "kana": "どうぞ",
+        "romaji": "Douzo",
+        "zh": "请",
+        "tip": "跟读 Douzo，按假名逐拍读；长音多保持一拍。",
+        "category": "礼貌与感谢"
+      },
+      {
+        "id": "l2-w4",
+        "jp": "大丈夫です",
+        "kana": "だいじょうぶです",
+        "romaji": "Daijoubu desu",
+        "zh": "没关系",
+        "tip": "跟读 Daijoubu desu，按假名逐拍读；长音多保持一拍。",
+        "category": "礼貌与感谢"
+      }
+    ],
+    "grammar": {
+      "jp": "すみません。",
+      "romaji": "Sumimasen.",
+      "zh": "不好意思。",
+      "explanation": "すみません 可用于引起注意或道歉。ありがとう 对熟人表达感谢；正式场合用 ありがとうございます。"
+    },
+    "dialogue": [
+      {
+        "jp": "すみません。",
+        "kana": "すみません。",
+        "romaji": "Sumimasen.",
+        "zh": "不好意思。",
+        "speaker": "A"
+      },
+      {
+        "jp": "はい、どうぞ。",
+        "kana": "はい、どうぞ。",
+        "romaji": "Hai, douzo.",
+        "zh": "好的，请。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l2-mcq-0",
+        "type": "single",
+        "prompt": "「ありがとう」是什么意思？",
+        "options": [
+          "谢谢",
+          "不好意思",
+          "拜托了",
+          "请"
+        ],
+        "correct": [
+          "谢谢"
+        ],
+        "explanation": "ありがとう（ありがとう / Arigatou）表示“谢谢”。"
+      },
+      {
+        "id": "l2-mcq-1",
+        "type": "single",
+        "prompt": "「すみません」是什么意思？",
+        "options": [
+          "谢谢",
+          "拜托了",
+          "请",
+          "不好意思"
+        ],
+        "correct": [
+          "不好意思"
+        ],
+        "explanation": "すみません（すみません / Sumimasen）表示“不好意思”。"
+      },
+      {
+        "id": "l2-mcq-2",
+        "type": "single",
+        "prompt": "「お願いします」是什么意思？",
+        "options": [
+          "不好意思",
+          "请",
+          "拜托了",
+          "谢谢"
+        ],
+        "correct": [
+          "拜托了"
+        ],
+        "explanation": "お願いします（おねがいします / Onegaishimasu）表示“拜托了”。"
+      },
+      {
+        "id": "l2-mcq-3",
+        "type": "single",
+        "prompt": "「どうぞ」是什么意思？",
+        "options": [
+          "拜托了",
+          "请",
+          "谢谢",
+          "不好意思"
+        ],
+        "correct": [
+          "请"
+        ],
+        "explanation": "どうぞ（どうぞ / Douzo）表示“请”。"
+      },
+      {
+        "id": "l2-mcq-4",
+        "type": "single",
+        "prompt": "「大丈夫です」是什么意思？",
+        "options": [
+          "没关系",
+          "谢谢",
+          "不好意思",
+          "拜托了"
+        ],
+        "correct": [
+          "没关系"
+        ],
+        "explanation": "大丈夫です（だいじょうぶです / Daijoubu desu）表示“没关系”。"
+      }
+    ]
+  },
+  {
+    "id": "lesson-3",
+    "number": 3,
+    "title": "数字一到十",
+    "subtitle": "Numbers 1–10",
+    "minutes": 8,
+    "objectives": [
+      "理解数字一到十的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "一、二、三。 先数到十。四、七、九还有其他读法；本课先学常用的 よん、なな、きゅう。きゅう 和 じゅう 的元音要拉长。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l3-w0",
+        "jp": "一",
+        "kana": "いち",
+        "romaji": "Ichi",
+        "zh": "一",
+        "tip": "跟读 Ichi，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      },
+      {
+        "id": "l3-w1",
+        "jp": "二",
+        "kana": "に",
+        "romaji": "Ni",
+        "zh": "二",
+        "tip": "跟读 Ni，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      },
+      {
+        "id": "l3-w2",
+        "jp": "三",
+        "kana": "さん",
+        "romaji": "San",
+        "zh": "三",
+        "tip": "跟读 San，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      },
+      {
+        "id": "l3-w3",
+        "jp": "四",
+        "kana": "よん",
+        "romaji": "Yon",
+        "zh": "四",
+        "tip": "跟读 Yon，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      },
+      {
+        "id": "l3-w4",
+        "jp": "五",
+        "kana": "ご",
+        "romaji": "Go",
+        "zh": "五",
+        "tip": "跟读 Go，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      },
+      {
+        "id": "l3-w5",
+        "jp": "六",
+        "kana": "ろく",
+        "romaji": "Roku",
+        "zh": "六",
+        "tip": "跟读 Roku，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      },
+      {
+        "id": "l3-w6",
+        "jp": "七",
+        "kana": "なな",
+        "romaji": "Nana",
+        "zh": "七",
+        "tip": "跟读 Nana，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      },
+      {
+        "id": "l3-w7",
+        "jp": "八",
+        "kana": "はち",
+        "romaji": "Hachi",
+        "zh": "八",
+        "tip": "跟读 Hachi，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      },
+      {
+        "id": "l3-w8",
+        "jp": "九",
+        "kana": "きゅう",
+        "romaji": "Kyuu",
+        "zh": "九",
+        "tip": "跟读 Kyuu，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      },
+      {
+        "id": "l3-w9",
+        "jp": "十",
+        "kana": "じゅう",
+        "romaji": "Juu",
+        "zh": "十",
+        "tip": "跟读 Juu，按假名逐拍读；长音多保持一拍。",
+        "category": "数字一到十"
+      }
+    ],
+    "grammar": {
+      "jp": "一、二、三。",
+      "romaji": "Ichi, ni, san.",
+      "zh": "一、二、三。",
+      "explanation": "先数到十。四、七、九还有其他读法；本课先学常用的 よん、なな、きゅう。きゅう 和 じゅう 的元音要拉长。"
+    },
+    "dialogue": [
+      {
+        "jp": "一、二、三。",
+        "kana": "いち、に、さん。",
+        "romaji": "Ichi, ni, san.",
+        "zh": "一、二、三。",
+        "speaker": "A"
+      },
+      {
+        "jp": "四、五、六。",
+        "kana": "よん、ご、ろく。",
+        "romaji": "Yon, go, roku.",
+        "zh": "四、五、六。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l3-mcq-0",
+        "type": "single",
+        "prompt": "「一」是什么意思？",
+        "options": [
+          "一",
+          "二",
+          "三",
+          "四"
+        ],
+        "correct": [
+          "一"
+        ],
+        "explanation": "一（いち / Ichi）表示“一”。"
+      },
+      {
+        "id": "l3-mcq-1",
+        "type": "single",
+        "prompt": "「二」是什么意思？",
+        "options": [
+          "一",
+          "三",
+          "四",
+          "二"
+        ],
+        "correct": [
+          "二"
+        ],
+        "explanation": "二（に / Ni）表示“二”。"
+      },
+      {
+        "id": "l3-mcq-2",
+        "type": "single",
+        "prompt": "「三」是什么意思？",
+        "options": [
+          "二",
+          "四",
+          "三",
+          "一"
+        ],
+        "correct": [
+          "三"
+        ],
+        "explanation": "三（さん / San）表示“三”。"
+      },
+      {
+        "id": "l3-mcq-3",
+        "type": "single",
+        "prompt": "「四」是什么意思？",
+        "options": [
+          "三",
+          "四",
+          "一",
+          "二"
+        ],
+        "correct": [
+          "四"
+        ],
+        "explanation": "四（よん / Yon）表示“四”。"
+      },
+      {
+        "id": "l3-mcq-4",
+        "type": "single",
+        "prompt": "「五」是什么意思？",
+        "options": [
+          "五",
+          "一",
+          "二",
+          "三"
+        ],
+        "correct": [
+          "五"
+        ],
+        "explanation": "五（ご / Go）表示“五”。"
+      },
+      {
+        "id": "l3-mcq-5",
+        "type": "single",
+        "prompt": "「六」是什么意思？",
+        "options": [
+          "一",
+          "二",
+          "三",
+          "六"
+        ],
+        "correct": [
+          "六"
+        ],
+        "explanation": "六（ろく / Roku）表示“六”。"
+      },
+      {
+        "id": "l3-mcq-6",
+        "type": "single",
+        "prompt": "「七」是什么意思？",
+        "options": [
+          "二",
+          "三",
+          "七",
+          "一"
+        ],
+        "correct": [
+          "七"
+        ],
+        "explanation": "七（なな / Nana）表示“七”。"
+      },
+      {
+        "id": "l3-mcq-7",
+        "type": "single",
+        "prompt": "「八」是什么意思？",
+        "options": [
+          "三",
+          "八",
+          "一",
+          "二"
+        ],
+        "correct": [
+          "八"
+        ],
+        "explanation": "八（はち / Hachi）表示“八”。"
+      },
+      {
+        "id": "l3-mcq-8",
+        "type": "single",
+        "prompt": "「九」是什么意思？",
+        "options": [
+          "九",
+          "一",
+          "二",
+          "三"
+        ],
+        "correct": [
+          "九"
+        ],
+        "explanation": "九（きゅう / Kyuu）表示“九”。"
+      },
+      {
+        "id": "l3-mcq-9",
+        "type": "single",
+        "prompt": "「十」是什么意思？",
+        "options": [
+          "一",
+          "二",
+          "三",
+          "十"
+        ],
+        "correct": [
+          "十"
+        ],
+        "explanation": "十（じゅう / Juu）表示“十”。"
+      }
+    ]
+  },
+  {
+    "id": "lesson-4",
+    "number": 4,
+    "title": "这是什么",
+    "subtitle": "What is this?",
+    "minutes": 8,
+    "objectives": [
+      "理解这是什么的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "这是书。 これ 指靠近自己的东西。「これは…です」表示这是什么；句末加 か 变成问句。疑问词 何（なん）意为“什么”。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l4-w0",
+        "jp": "これ",
+        "kana": "これ",
+        "romaji": "Kore",
+        "zh": "这个",
+        "tip": "跟读 Kore，按假名逐拍读；长音多保持一拍。",
+        "category": "这是什么"
+      },
+      {
+        "id": "l4-w1",
+        "jp": "それ",
+        "kana": "それ",
+        "romaji": "Sore",
+        "zh": "那个（靠近对方）",
+        "tip": "跟读 Sore，按假名逐拍读；长音多保持一拍。",
+        "category": "这是什么"
+      },
+      {
+        "id": "l4-w2",
+        "jp": "あれ",
+        "kana": "あれ",
+        "romaji": "Are",
+        "zh": "那个（离双方都远）",
+        "tip": "跟读 Are，按假名逐拍读；长音多保持一拍。",
+        "category": "这是什么"
+      },
+      {
+        "id": "l4-w3",
+        "jp": "本",
+        "kana": "ほん",
+        "romaji": "Hon",
+        "zh": "书",
+        "tip": "跟读 Hon，按假名逐拍读；长音多保持一拍。",
+        "category": "这是什么"
+      },
+      {
+        "id": "l4-w4",
+        "jp": "ペン",
+        "kana": "ぺん",
+        "romaji": "Pen",
+        "zh": "笔",
+        "tip": "跟读 Pen，按假名逐拍读；长音多保持一拍。",
+        "category": "这是什么"
+      }
+    ],
+    "grammar": {
+      "jp": "これは本です。",
+      "romaji": "Kore wa hon desu.",
+      "zh": "这是书。",
+      "explanation": "これ 指靠近自己的东西。「これは…です」表示这是什么；句末加 か 变成问句。疑问词 何（なん）意为“什么”。"
+    },
+    "dialogue": [
+      {
+        "jp": "これは何ですか。",
+        "kana": "これはなんですか。",
+        "romaji": "Kore wa nan desu ka.",
+        "zh": "这是什么？",
+        "speaker": "A"
+      },
+      {
+        "jp": "それは本です。",
+        "kana": "それはほんです。",
+        "romaji": "Sore wa hon desu.",
+        "zh": "那是书。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l4-mcq-0",
+        "type": "single",
+        "prompt": "「これ」是什么意思？",
+        "options": [
+          "这个",
+          "那个（靠近对方）",
+          "那个（离双方都远）",
+          "书"
+        ],
+        "correct": [
+          "这个"
+        ],
+        "explanation": "これ（これ / Kore）表示“这个”。"
+      },
+      {
+        "id": "l4-mcq-1",
+        "type": "single",
+        "prompt": "「それ」是什么意思？",
+        "options": [
+          "这个",
+          "那个（离双方都远）",
+          "书",
+          "那个（靠近对方）"
+        ],
+        "correct": [
+          "那个（靠近对方）"
+        ],
+        "explanation": "それ（それ / Sore）表示“那个（靠近对方）”。"
+      },
+      {
+        "id": "l4-mcq-2",
+        "type": "single",
+        "prompt": "「あれ」是什么意思？",
+        "options": [
+          "那个（靠近对方）",
+          "书",
+          "那个（离双方都远）",
+          "这个"
+        ],
+        "correct": [
+          "那个（离双方都远）"
+        ],
+        "explanation": "あれ（あれ / Are）表示“那个（离双方都远）”。"
+      },
+      {
+        "id": "l4-mcq-3",
+        "type": "single",
+        "prompt": "「本」是什么意思？",
+        "options": [
+          "那个（离双方都远）",
+          "书",
+          "这个",
+          "那个（靠近对方）"
+        ],
+        "correct": [
+          "书"
+        ],
+        "explanation": "本（ほん / Hon）表示“书”。"
+      },
+      {
+        "id": "l4-mcq-4",
+        "type": "single",
+        "prompt": "「ペン」是什么意思？",
+        "options": [
+          "笔",
+          "这个",
+          "那个（靠近对方）",
+          "那个（离双方都远）"
+        ],
+        "correct": [
+          "笔"
+        ],
+        "explanation": "ペン（ぺん / Pen）表示“笔”。"
+      }
+    ]
+  },
+  {
+    "id": "lesson-5",
+    "number": 5,
+    "title": "我的与他的",
+    "subtitle": "Whose is it?",
+    "minutes": 8,
+    "objectives": [
+      "理解我的与他的的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "这是我的包。 「A の B」表示 A 的 B。誰の 表示“谁的”。日常对话已知对方姓名时通常称姓名，避免反复使用 あなた。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l5-w0",
+        "jp": "私",
+        "kana": "わたし",
+        "romaji": "Watashi",
+        "zh": "我",
+        "tip": "跟读 Watashi，按假名逐拍读；长音多保持一拍。",
+        "category": "我的与他的"
+      },
+      {
+        "id": "l5-w1",
+        "jp": "あなた",
+        "kana": "あなた",
+        "romaji": "Anata",
+        "zh": "你",
+        "tip": "跟读 Anata，按假名逐拍读；长音多保持一拍。",
+        "category": "我的与他的"
+      },
+      {
+        "id": "l5-w2",
+        "jp": "友達",
+        "kana": "ともだち",
+        "romaji": "Tomodachi",
+        "zh": "朋友",
+        "tip": "跟读 Tomodachi，按假名逐拍读；长音多保持一拍。",
+        "category": "我的与他的"
+      },
+      {
+        "id": "l5-w3",
+        "jp": "かばん",
+        "kana": "かばん",
+        "romaji": "Kaban",
+        "zh": "包",
+        "tip": "跟读 Kaban，按假名逐拍读；长音多保持一拍。",
+        "category": "我的与他的"
+      },
+      {
+        "id": "l5-w4",
+        "jp": "誰",
+        "kana": "だれ",
+        "romaji": "Dare",
+        "zh": "谁",
+        "tip": "跟读 Dare，按假名逐拍读；长音多保持一拍。",
+        "category": "我的与他的"
+      }
+    ],
+    "grammar": {
+      "jp": "これは私のかばんです。",
+      "romaji": "Kore wa watashi no kaban desu.",
+      "zh": "这是我的包。",
+      "explanation": "「A の B」表示 A 的 B。誰の 表示“谁的”。日常对话已知对方姓名时通常称姓名，避免反复使用 あなた。"
+    },
+    "dialogue": [
+      {
+        "jp": "これは誰のかばんですか。",
+        "kana": "これはだれのかばんですか。",
+        "romaji": "Kore wa dare no kaban desu ka.",
+        "zh": "这是谁的包？",
+        "speaker": "A"
+      },
+      {
+        "jp": "私のかばんです。",
+        "kana": "わたしのかばんです。",
+        "romaji": "Watashi no kaban desu.",
+        "zh": "是我的包。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l5-mcq-0",
+        "type": "single",
+        "prompt": "「私」是什么意思？",
+        "options": [
+          "我",
+          "你",
+          "朋友",
+          "包"
+        ],
+        "correct": [
+          "我"
+        ],
+        "explanation": "私（わたし / Watashi）表示“我”。"
+      },
+      {
+        "id": "l5-mcq-1",
+        "type": "single",
+        "prompt": "「あなた」是什么意思？",
+        "options": [
+          "我",
+          "朋友",
+          "包",
+          "你"
+        ],
+        "correct": [
+          "你"
+        ],
+        "explanation": "あなた（あなた / Anata）表示“你”。"
+      },
+      {
+        "id": "l5-mcq-2",
+        "type": "single",
+        "prompt": "「友達」是什么意思？",
+        "options": [
+          "你",
+          "包",
+          "朋友",
+          "我"
+        ],
+        "correct": [
+          "朋友"
+        ],
+        "explanation": "友達（ともだち / Tomodachi）表示“朋友”。"
+      },
+      {
+        "id": "l5-mcq-3",
+        "type": "single",
+        "prompt": "「かばん」是什么意思？",
+        "options": [
+          "朋友",
+          "包",
+          "我",
+          "你"
+        ],
+        "correct": [
+          "包"
+        ],
+        "explanation": "かばん（かばん / Kaban）表示“包”。"
+      },
+      {
+        "id": "l5-mcq-4",
+        "type": "single",
+        "prompt": "「誰」是什么意思？",
+        "options": [
+          "谁",
+          "我",
+          "你",
+          "朋友"
+        ],
+        "correct": [
+          "谁"
+        ],
+        "explanation": "誰（だれ / Dare）表示“谁”。"
+      }
+    ]
+  },
+  {
+    "id": "lesson-6",
+    "number": 6,
+    "title": "地点与问路",
+    "subtitle": "Places and directions",
+    "minutes": 8,
+    "objectives": [
+      "理解地点与问路的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "洗手间在哪里？ 「地点 は どこですか」询问位置。回答可以用 ここです 或 そこです；问路前加 すみません 更礼貌。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l6-w0",
+        "jp": "ここ",
+        "kana": "ここ",
+        "romaji": "Koko",
+        "zh": "这里",
+        "tip": "跟读 Koko，按假名逐拍读；长音多保持一拍。",
+        "category": "地点与问路"
+      },
+      {
+        "id": "l6-w1",
+        "jp": "そこ",
+        "kana": "そこ",
+        "romaji": "Soko",
+        "zh": "那里（靠近对方）",
+        "tip": "跟读 Soko，按假名逐拍读；长音多保持一拍。",
+        "category": "地点与问路"
+      },
+      {
+        "id": "l6-w2",
+        "jp": "どこ",
+        "kana": "どこ",
+        "romaji": "Doko",
+        "zh": "哪里",
+        "tip": "跟读 Doko，按假名逐拍读；长音多保持一拍。",
+        "category": "地点与问路"
+      },
+      {
+        "id": "l6-w3",
+        "jp": "駅",
+        "kana": "えき",
+        "romaji": "Eki",
+        "zh": "车站",
+        "tip": "跟读 Eki，按假名逐拍读；长音多保持一拍。",
+        "category": "地点与问路"
+      },
+      {
+        "id": "l6-w4",
+        "jp": "トイレ",
+        "kana": "といれ",
+        "romaji": "Toire",
+        "zh": "洗手间",
+        "tip": "跟读 Toire，按假名逐拍读；长音多保持一拍。",
+        "category": "地点与问路"
+      }
+    ],
+    "grammar": {
+      "jp": "トイレはどこですか。",
+      "romaji": "Toire wa doko desu ka.",
+      "zh": "洗手间在哪里？",
+      "explanation": "「地点 は どこですか」询问位置。回答可以用 ここです 或 そこです；问路前加 すみません 更礼貌。"
+    },
+    "dialogue": [
+      {
+        "jp": "すみません。駅はどこですか。",
+        "kana": "すみません。えきはどこですか。",
+        "romaji": "Sumimasen. Eki wa doko desu ka.",
+        "zh": "不好意思，车站在哪里？",
+        "speaker": "A"
+      },
+      {
+        "jp": "そこです。",
+        "kana": "そこです。",
+        "romaji": "Soko desu.",
+        "zh": "在那里。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l6-mcq-0",
+        "type": "single",
+        "prompt": "「ここ」是什么意思？",
+        "options": [
+          "这里",
+          "那里（靠近对方）",
+          "哪里",
+          "车站"
+        ],
+        "correct": [
+          "这里"
+        ],
+        "explanation": "ここ（ここ / Koko）表示“这里”。"
+      },
+      {
+        "id": "l6-mcq-1",
+        "type": "single",
+        "prompt": "「そこ」是什么意思？",
+        "options": [
+          "这里",
+          "哪里",
+          "车站",
+          "那里（靠近对方）"
+        ],
+        "correct": [
+          "那里（靠近对方）"
+        ],
+        "explanation": "そこ（そこ / Soko）表示“那里（靠近对方）”。"
+      },
+      {
+        "id": "l6-mcq-2",
+        "type": "single",
+        "prompt": "「どこ」是什么意思？",
+        "options": [
+          "那里（靠近对方）",
+          "车站",
+          "哪里",
+          "这里"
+        ],
+        "correct": [
+          "哪里"
+        ],
+        "explanation": "どこ（どこ / Doko）表示“哪里”。"
+      },
+      {
+        "id": "l6-mcq-3",
+        "type": "single",
+        "prompt": "「駅」是什么意思？",
+        "options": [
+          "哪里",
+          "车站",
+          "这里",
+          "那里（靠近对方）"
+        ],
+        "correct": [
+          "车站"
+        ],
+        "explanation": "駅（えき / Eki）表示“车站”。"
+      },
+      {
+        "id": "l6-mcq-4",
+        "type": "single",
+        "prompt": "「トイレ」是什么意思？",
+        "options": [
+          "洗手间",
+          "这里",
+          "那里（靠近对方）",
+          "哪里"
+        ],
+        "correct": [
+          "洗手间"
+        ],
+        "explanation": "トイレ（といれ / Toire）表示“洗手间”。"
+      }
+    ]
+  },
+  {
+    "id": "lesson-7",
+    "number": 7,
+    "title": "时间与日程",
+    "subtitle": "Time and plans",
+    "minutes": 8,
+    "objectives": [
+      "理解时间与日程的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "现在是七点半。 数字后加 時（じ）表示几点；七点读 しちじ，四点读 よじ，九点读 くじ。半 放在小时后表示半点。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l7-w0",
+        "jp": "今",
+        "kana": "いま",
+        "romaji": "Ima",
+        "zh": "现在",
+        "tip": "跟读 Ima，按假名逐拍读；长音多保持一拍。",
+        "category": "时间与日程"
+      },
+      {
+        "id": "l7-w1",
+        "jp": "何時",
+        "kana": "なんじ",
+        "romaji": "Nanji",
+        "zh": "几点",
+        "tip": "跟读 Nanji，按假名逐拍读；长音多保持一拍。",
+        "category": "时间与日程"
+      },
+      {
+        "id": "l7-w2",
+        "jp": "一時",
+        "kana": "いちじ",
+        "romaji": "Ichiji",
+        "zh": "一点",
+        "tip": "跟读 Ichiji，按假名逐拍读；长音多保持一拍。",
+        "category": "时间与日程"
+      },
+      {
+        "id": "l7-w3",
+        "jp": "七時",
+        "kana": "しちじ",
+        "romaji": "Shichiji",
+        "zh": "七点",
+        "tip": "跟读 Shichiji，按假名逐拍读；长音多保持一拍。",
+        "category": "时间与日程"
+      },
+      {
+        "id": "l7-w4",
+        "jp": "半",
+        "kana": "はん",
+        "romaji": "Han",
+        "zh": "半",
+        "tip": "跟读 Han，按假名逐拍读；长音多保持一拍。",
+        "category": "时间与日程"
+      }
+    ],
+    "grammar": {
+      "jp": "今、七時半です。",
+      "romaji": "Ima, shichiji han desu.",
+      "zh": "现在是七点半。",
+      "explanation": "数字后加 時（じ）表示几点；七点读 しちじ，四点读 よじ，九点读 くじ。半 放在小时后表示半点。"
+    },
+    "dialogue": [
+      {
+        "jp": "今、何時ですか。",
+        "kana": "いま、なんじですか。",
+        "romaji": "Ima, nanji desu ka.",
+        "zh": "现在几点？",
+        "speaker": "A"
+      },
+      {
+        "jp": "七時半です。",
+        "kana": "しちじはんです。",
+        "romaji": "Shichiji han desu.",
+        "zh": "七点半。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l7-mcq-0",
+        "type": "single",
+        "prompt": "「今」是什么意思？",
+        "options": [
+          "现在",
+          "几点",
+          "一点",
+          "七点"
+        ],
+        "correct": [
+          "现在"
+        ],
+        "explanation": "今（いま / Ima）表示“现在”。"
+      },
+      {
+        "id": "l7-mcq-1",
+        "type": "single",
+        "prompt": "「何時」是什么意思？",
+        "options": [
+          "现在",
+          "一点",
+          "七点",
+          "几点"
+        ],
+        "correct": [
+          "几点"
+        ],
+        "explanation": "何時（なんじ / Nanji）表示“几点”。"
+      },
+      {
+        "id": "l7-mcq-2",
+        "type": "single",
+        "prompt": "「一時」是什么意思？",
+        "options": [
+          "几点",
+          "七点",
+          "一点",
+          "现在"
+        ],
+        "correct": [
+          "一点"
+        ],
+        "explanation": "一時（いちじ / Ichiji）表示“一点”。"
+      },
+      {
+        "id": "l7-mcq-3",
+        "type": "single",
+        "prompt": "「七時」是什么意思？",
+        "options": [
+          "一点",
+          "七点",
+          "现在",
+          "几点"
+        ],
+        "correct": [
+          "七点"
+        ],
+        "explanation": "七時（しちじ / Shichiji）表示“七点”。"
+      },
+      {
+        "id": "l7-mcq-4",
+        "type": "single",
+        "prompt": "「半」是什么意思？",
+        "options": [
+          "半",
+          "现在",
+          "几点",
+          "一点"
+        ],
+        "correct": [
+          "半"
+        ],
+        "explanation": "半（はん / Han）表示“半”。"
+      }
+    ]
+  },
+  {
+    "id": "lesson-8",
+    "number": 8,
+    "title": "喜欢的食物",
+    "subtitle": "Food and preferences",
+    "minutes": 8,
+    "objectives": [
+      "理解喜欢的食物的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "我喜欢面包。 「私は X が好きです」表达喜欢 X。好き 是表示喜好的词，此句用 が 标记喜欢的对象；す 的 u 常读得很轻。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l8-w0",
+        "jp": "水",
+        "kana": "みず",
+        "romaji": "Mizu",
+        "zh": "水",
+        "tip": "跟读 Mizu，按假名逐拍读；长音多保持一拍。",
+        "category": "喜欢的食物"
+      },
+      {
+        "id": "l8-w1",
+        "jp": "お茶",
+        "kana": "おちゃ",
+        "romaji": "Ocha",
+        "zh": "茶",
+        "tip": "跟读 Ocha，按假名逐拍读；长音多保持一拍。",
+        "category": "喜欢的食物"
+      },
+      {
+        "id": "l8-w2",
+        "jp": "ご飯",
+        "kana": "ごはん",
+        "romaji": "Gohan",
+        "zh": "米饭／饭",
+        "tip": "跟读 Gohan，按假名逐拍读；长音多保持一拍。",
+        "category": "喜欢的食物"
+      },
+      {
+        "id": "l8-w3",
+        "jp": "パン",
+        "kana": "ぱん",
+        "romaji": "Pan",
+        "zh": "面包",
+        "tip": "跟读 Pan，按假名逐拍读；长音多保持一拍。",
+        "category": "喜欢的食物"
+      },
+      {
+        "id": "l8-w4",
+        "jp": "好き",
+        "kana": "すき",
+        "romaji": "Suki",
+        "zh": "喜欢",
+        "tip": "跟读 Suki，按假名逐拍读；长音多保持一拍。",
+        "category": "喜欢的食物"
+      }
+    ],
+    "grammar": {
+      "jp": "私はパンが好きです。",
+      "romaji": "Watashi wa pan ga suki desu.",
+      "zh": "我喜欢面包。",
+      "explanation": "「私は X が好きです」表达喜欢 X。好き 是表示喜好的词，此句用 が 标记喜欢的对象；す 的 u 常读得很轻。"
+    },
+    "dialogue": [
+      {
+        "jp": "パンが好きですか。",
+        "kana": "ぱんがすきですか。",
+        "romaji": "Pan ga suki desu ka.",
+        "zh": "你喜欢面包吗？",
+        "speaker": "A"
+      },
+      {
+        "jp": "はい、好きです。",
+        "kana": "はい、すきです。",
+        "romaji": "Hai, suki desu.",
+        "zh": "是的，喜欢。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l8-mcq-0",
+        "type": "single",
+        "prompt": "「水」是什么意思？",
+        "options": [
+          "水",
+          "茶",
+          "米饭／饭",
+          "面包"
+        ],
+        "correct": [
+          "水"
+        ],
+        "explanation": "水（みず / Mizu）表示“水”。"
+      },
+      {
+        "id": "l8-mcq-1",
+        "type": "single",
+        "prompt": "「お茶」是什么意思？",
+        "options": [
+          "水",
+          "米饭／饭",
+          "面包",
+          "茶"
+        ],
+        "correct": [
+          "茶"
+        ],
+        "explanation": "お茶（おちゃ / Ocha）表示“茶”。"
+      },
+      {
+        "id": "l8-mcq-2",
+        "type": "single",
+        "prompt": "「ご飯」是什么意思？",
+        "options": [
+          "茶",
+          "面包",
+          "米饭／饭",
+          "水"
+        ],
+        "correct": [
+          "米饭／饭"
+        ],
+        "explanation": "ご飯（ごはん / Gohan）表示“米饭／饭”。"
+      },
+      {
+        "id": "l8-mcq-3",
+        "type": "single",
+        "prompt": "「パン」是什么意思？",
+        "options": [
+          "米饭／饭",
+          "面包",
+          "水",
+          "茶"
+        ],
+        "correct": [
+          "面包"
+        ],
+        "explanation": "パン（ぱん / Pan）表示“面包”。"
+      },
+      {
+        "id": "l8-mcq-4",
+        "type": "single",
+        "prompt": "「好き」是什么意思？",
+        "options": [
+          "喜欢",
+          "水",
+          "茶",
+          "米饭／饭"
+        ],
+        "correct": [
+          "喜欢"
+        ],
+        "explanation": "好き（すき / Suki）表示“喜欢”。"
+      }
+    ]
+  },
+  {
+    "id": "lesson-9",
+    "number": 9,
+    "title": "点餐与购物",
+    "subtitle": "Ordering and shopping",
+    "minutes": 8,
+    "objectives": [
+      "理解点餐与购物的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "请给我一份茶。 「X をください」表示请给我 X；助词 を 读 o。一つ、二つ 是通用计数方式，不能把所有物品都简单用 一、二 来数。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l9-w0",
+        "jp": "ください",
+        "kana": "ください",
+        "romaji": "Kudasai",
+        "zh": "请给我",
+        "tip": "跟读 Kudasai，按假名逐拍读；长音多保持一拍。",
+        "category": "点餐与购物"
+      },
+      {
+        "id": "l9-w1",
+        "jp": "いくら",
+        "kana": "いくら",
+        "romaji": "Ikura",
+        "zh": "多少钱",
+        "tip": "跟读 Ikura，按假名逐拍读；长音多保持一拍。",
+        "category": "点餐与购物"
+      },
+      {
+        "id": "l9-w2",
+        "jp": "円",
+        "kana": "えん",
+        "romaji": "En",
+        "zh": "日元",
+        "tip": "跟读 En，按假名逐拍读；长音多保持一拍。",
+        "category": "点餐与购物"
+      },
+      {
+        "id": "l9-w3",
+        "jp": "一つ",
+        "kana": "ひとつ",
+        "romaji": "Hitotsu",
+        "zh": "一个",
+        "tip": "跟读 Hitotsu，按假名逐拍读；长音多保持一拍。",
+        "category": "点餐与购物"
+      },
+      {
+        "id": "l9-w4",
+        "jp": "二つ",
+        "kana": "ふたつ",
+        "romaji": "Futatsu",
+        "zh": "两个",
+        "tip": "跟读 Futatsu，按假名逐拍读；长音多保持一拍。",
+        "category": "点餐与购物"
+      }
+    ],
+    "grammar": {
+      "jp": "お茶を一つください。",
+      "romaji": "Ocha o hitotsu kudasai.",
+      "zh": "请给我一份茶。",
+      "explanation": "「X をください」表示请给我 X；助词 を 读 o。一つ、二つ 是通用计数方式，不能把所有物品都简单用 一、二 来数。"
+    },
+    "dialogue": [
+      {
+        "jp": "お茶を一つください。",
+        "kana": "おちゃをひとつください。",
+        "romaji": "Ocha o hitotsu kudasai.",
+        "zh": "请给我一份茶。",
+        "speaker": "A"
+      },
+      {
+        "jp": "はい、どうぞ。",
+        "kana": "はい、どうぞ。",
+        "romaji": "Hai, douzo.",
+        "zh": "好的，给您。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l9-mcq-0",
+        "type": "single",
+        "prompt": "「ください」是什么意思？",
+        "options": [
+          "请给我",
+          "多少钱",
+          "日元",
+          "一个"
+        ],
+        "correct": [
+          "请给我"
+        ],
+        "explanation": "ください（ください / Kudasai）表示“请给我”。"
+      },
+      {
+        "id": "l9-mcq-1",
+        "type": "single",
+        "prompt": "「いくら」是什么意思？",
+        "options": [
+          "请给我",
+          "日元",
+          "一个",
+          "多少钱"
+        ],
+        "correct": [
+          "多少钱"
+        ],
+        "explanation": "いくら（いくら / Ikura）表示“多少钱”。"
+      },
+      {
+        "id": "l9-mcq-2",
+        "type": "single",
+        "prompt": "「円」是什么意思？",
+        "options": [
+          "多少钱",
+          "一个",
+          "日元",
+          "请给我"
+        ],
+        "correct": [
+          "日元"
+        ],
+        "explanation": "円（えん / En）表示“日元”。"
+      },
+      {
+        "id": "l9-mcq-3",
+        "type": "single",
+        "prompt": "「一つ」是什么意思？",
+        "options": [
+          "日元",
+          "一个",
+          "请给我",
+          "多少钱"
+        ],
+        "correct": [
+          "一个"
+        ],
+        "explanation": "一つ（ひとつ / Hitotsu）表示“一个”。"
+      },
+      {
+        "id": "l9-mcq-4",
+        "type": "single",
+        "prompt": "「二つ」是什么意思？",
+        "options": [
+          "两个",
+          "请给我",
+          "多少钱",
+          "日元"
+        ],
+        "correct": [
+          "两个"
+        ],
+        "explanation": "二つ（ふたつ / Futatsu）表示“两个”。"
+      }
+    ]
+  },
+  {
+    "id": "lesson-10",
+    "number": 10,
+    "title": "日常动作",
+    "subtitle": "Daily activities",
+    "minutes": 8,
+    "objectives": [
+      "理解日常动作的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "我每天读书。 礼貌的动词形式常以 ます 结尾。「对象 を 动词」说明做什么；日语常省略从上下文可知的“我”。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l10-w0",
+        "jp": "食べます",
+        "kana": "たべます",
+        "romaji": "Tabemasu",
+        "zh": "吃",
+        "tip": "跟读 Tabemasu，按假名逐拍读；长音多保持一拍。",
+        "category": "日常动作"
+      },
+      {
+        "id": "l10-w1",
+        "jp": "飲みます",
+        "kana": "のみます",
+        "romaji": "Nomimasu",
+        "zh": "喝",
+        "tip": "跟读 Nomimasu，按假名逐拍读；长音多保持一拍。",
+        "category": "日常动作"
+      },
+      {
+        "id": "l10-w2",
+        "jp": "見ます",
+        "kana": "みます",
+        "romaji": "Mimasu",
+        "zh": "看",
+        "tip": "跟读 Mimasu，按假名逐拍读；长音多保持一拍。",
+        "category": "日常动作"
+      },
+      {
+        "id": "l10-w3",
+        "jp": "読みます",
+        "kana": "よみます",
+        "romaji": "Yomimasu",
+        "zh": "读",
+        "tip": "跟读 Yomimasu，按假名逐拍读；长音多保持一拍。",
+        "category": "日常动作"
+      },
+      {
+        "id": "l10-w4",
+        "jp": "毎日",
+        "kana": "まいにち",
+        "romaji": "Mainichi",
+        "zh": "每天",
+        "tip": "跟读 Mainichi，按假名逐拍读；长音多保持一拍。",
+        "category": "日常动作"
+      }
+    ],
+    "grammar": {
+      "jp": "毎日、本を読みます。",
+      "romaji": "Mainichi, hon o yomimasu.",
+      "zh": "我每天读书。",
+      "explanation": "礼貌的动词形式常以 ます 结尾。「对象 を 动词」说明做什么；日语常省略从上下文可知的“我”。"
+    },
+    "dialogue": [
+      {
+        "jp": "毎日、何を飲みますか。",
+        "kana": "まいにち、なにをのみますか。",
+        "romaji": "Mainichi, nani o nomimasu ka.",
+        "zh": "你每天喝什么？",
+        "speaker": "A"
+      },
+      {
+        "jp": "お茶を飲みます。",
+        "kana": "おちゃをのみます。",
+        "romaji": "Ocha o nomimasu.",
+        "zh": "我喝茶。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l10-mcq-0",
+        "type": "single",
+        "prompt": "「食べます」是什么意思？",
+        "options": [
+          "吃",
+          "喝",
+          "看",
+          "读"
+        ],
+        "correct": [
+          "吃"
+        ],
+        "explanation": "食べます（たべます / Tabemasu）表示“吃”。"
+      },
+      {
+        "id": "l10-mcq-1",
+        "type": "single",
+        "prompt": "「飲みます」是什么意思？",
+        "options": [
+          "吃",
+          "看",
+          "读",
+          "喝"
+        ],
+        "correct": [
+          "喝"
+        ],
+        "explanation": "飲みます（のみます / Nomimasu）表示“喝”。"
+      },
+      {
+        "id": "l10-mcq-2",
+        "type": "single",
+        "prompt": "「見ます」是什么意思？",
+        "options": [
+          "喝",
+          "读",
+          "看",
+          "吃"
+        ],
+        "correct": [
+          "看"
+        ],
+        "explanation": "見ます（みます / Mimasu）表示“看”。"
+      },
+      {
+        "id": "l10-mcq-3",
+        "type": "single",
+        "prompt": "「読みます」是什么意思？",
+        "options": [
+          "看",
+          "读",
+          "吃",
+          "喝"
+        ],
+        "correct": [
+          "读"
+        ],
+        "explanation": "読みます（よみます / Yomimasu）表示“读”。"
+      },
+      {
+        "id": "l10-mcq-4",
+        "type": "single",
+        "prompt": "「毎日」是什么意思？",
+        "options": [
+          "每天",
+          "吃",
+          "喝",
+          "看"
+        ],
+        "correct": [
+          "每天"
+        ],
+        "explanation": "毎日（まいにち / Mainichi）表示“每天”。"
+      }
+    ]
+  },
+  {
+    "id": "lesson-11",
+    "number": 11,
+    "title": "去哪里与总复习",
+    "subtitle": "Going places and review",
+    "minutes": 8,
+    "objectives": [
+      "理解去哪里与总复习的常用表达",
+      "跟读词汇和简短对话",
+      "完成单选测验并达到 80%"
+    ],
+    "summary": "明天去学校。 「地点 に行きます」表示去某地；に 标记目的地。がっこう 的小 っ 停顿一拍，こう 拉长。复习 は、の、を、に 的不同用法。",
+    "status": "published",
+    "publishAt": null,
+    "words": [
+      {
+        "id": "l11-w0",
+        "jp": "行きます",
+        "kana": "いきます",
+        "romaji": "Ikimasu",
+        "zh": "去",
+        "tip": "跟读 Ikimasu，按假名逐拍读；长音多保持一拍。",
+        "category": "去哪里与总复习"
+      },
+      {
+        "id": "l11-w1",
+        "jp": "学校",
+        "kana": "がっこう",
+        "romaji": "Gakkou",
+        "zh": "学校",
+        "tip": "跟读 Gakkou，按假名逐拍读；长音多保持一拍。",
+        "category": "去哪里与总复习"
+      },
+      {
+        "id": "l11-w2",
+        "jp": "家",
+        "kana": "いえ",
+        "romaji": "Ie",
+        "zh": "家",
+        "tip": "跟读 Ie，按假名逐拍读；长音多保持一拍。",
+        "category": "去哪里与总复习"
+      },
+      {
+        "id": "l11-w3",
+        "jp": "明日",
+        "kana": "あした",
+        "romaji": "Ashita",
+        "zh": "明天",
+        "tip": "跟读 Ashita，按假名逐拍读；长音多保持一拍。",
+        "category": "去哪里与总复习"
+      },
+      {
+        "id": "l11-w4",
+        "jp": "今日",
+        "kana": "きょう",
+        "romaji": "Kyou",
+        "zh": "今天",
+        "tip": "跟读 Kyou，按假名逐拍读；长音多保持一拍。",
+        "category": "去哪里与总复习"
+      }
+    ],
+    "grammar": {
+      "jp": "明日、学校に行きます。",
+      "romaji": "Ashita, gakkou ni ikimasu.",
+      "zh": "明天去学校。",
+      "explanation": "「地点 に行きます」表示去某地；に 标记目的地。がっこう 的小 っ 停顿一拍，こう 拉长。复习 は、の、を、に 的不同用法。"
+    },
+    "dialogue": [
+      {
+        "jp": "明日、どこに行きますか。",
+        "kana": "あした、どこにいきますか。",
+        "romaji": "Ashita, doko ni ikimasu ka.",
+        "zh": "明天去哪里？",
+        "speaker": "A"
+      },
+      {
+        "jp": "学校に行きます。",
+        "kana": "がっこうにいきます。",
+        "romaji": "Gakkou ni ikimasu.",
+        "zh": "去学校。",
+        "speaker": "B"
+      }
+    ],
+    "questions": [
+      {
+        "id": "l11-mcq-0",
+        "type": "single",
+        "prompt": "「行きます」是什么意思？",
+        "options": [
+          "去",
+          "学校",
+          "家",
+          "明天"
+        ],
+        "correct": [
+          "去"
+        ],
+        "explanation": "行きます（いきます / Ikimasu）表示“去”。"
+      },
+      {
+        "id": "l11-mcq-1",
+        "type": "single",
+        "prompt": "「学校」是什么意思？",
+        "options": [
+          "去",
+          "家",
+          "明天",
+          "学校"
+        ],
+        "correct": [
+          "学校"
+        ],
+        "explanation": "学校（がっこう / Gakkou）表示“学校”。"
+      },
+      {
+        "id": "l11-mcq-2",
+        "type": "single",
+        "prompt": "「家」是什么意思？",
+        "options": [
+          "学校",
+          "明天",
+          "家",
+          "去"
+        ],
+        "correct": [
+          "家"
+        ],
+        "explanation": "家（いえ / Ie）表示“家”。"
+      },
+      {
+        "id": "l11-mcq-3",
+        "type": "single",
+        "prompt": "「明日」是什么意思？",
+        "options": [
+          "家",
+          "明天",
+          "去",
+          "学校"
+        ],
+        "correct": [
+          "明天"
+        ],
+        "explanation": "明日（あした / Ashita）表示“明天”。"
+      },
+      {
+        "id": "l11-mcq-4",
+        "type": "single",
+        "prompt": "「今日」是什么意思？",
+        "options": [
+          "今天",
+          "去",
+          "学校",
+          "家"
+        ],
+        "correct": [
+          "今天"
+        ],
+        "explanation": "今日（きょう / Kyou）表示“今天”。"
+      }
+    ]
+  }
+]
