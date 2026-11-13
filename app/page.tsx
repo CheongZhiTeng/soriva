@@ -105,8 +105,8 @@ function Workspace() {
     };
   }, [menu]);
   const lessons = useMemo(() => {
-    const all = [...state.customLessons, ...j.courses, ...curriculum];
-    return [...new Map(all.map(l => [l.id, l])).values()];
+    const all = [...curriculum, ...state.customLessons, ...j.courses];
+    return [...new Map(all.map(l => [l.id, l])).values()].sort((a,b)=>a.number-b.number);
   }, [state.customLessons, j.courses]);
   const published = lessons.filter(l => l.status === 'published' || l.status === 'scheduled' && l.publishAt && new Date(l.publishAt) <= new Date()),
     lesson = lessons.find(l => l.id === lessonId) ?? firstLesson;

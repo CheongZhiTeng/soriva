@@ -28,7 +28,7 @@ export default function Auth({
     setMessage('');
     try {
       if ((recovery || mode === 'signup') && password !== confirm) throw Error(t("两次输入的密码不一致"));
-      const redirect = window.location.origin + '/';
+      const redirect = window.location.origin + window.location.pathname;
       const r = recovery ? await supabase.auth.updateUser({
         password
       }) : mode === 'signup' ? await supabase.auth.signUp({
@@ -71,7 +71,7 @@ export default function Auth({
                 type: 'signup',
                 email,
                 options: {
-                  emailRedirectTo: location.origin + '/'
+                  emailRedirectTo: location.origin + location.pathname
                 }
               });
               setMessage(r.error?.message ?? t("验证邮件已请求发送，请检查邮箱。"));

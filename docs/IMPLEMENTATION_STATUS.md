@@ -44,3 +44,13 @@ Keep the current owner-only audience until acceptance is complete. Do not reset 
 - Dashboard is first and sticky in a single sidebar scroll area; fixed bottom account/settings area, mobile body scroll lock and reduced-motion drawer positioning.
 - New geometric sky/path favicon with a versioned URL.
 - TypeScript, 13 existing tests and production build passed. Browser verified auth labels switch to English and choice survives refresh. Signed-in sidebar/header and device-specific scroll behavior require authenticated visual acceptance; no real account was used for this pass.
+
+## Continuation — 2026-11-13
+
+Source now contains 100 lessons; 12–100 are new vocabulary-focused lessons, with contextual grammar in 71–100 and cumulative review in 100. Existing lessons/history retained. Client unlock limit, auth callback path, stale timeout, cloud lesson precedence and unsafe backup properties fixed. Privacy/browser headers added for preview and compatible static hosts. 17 tests, TypeScript, production build and anonymous desktop/mobile browser checks pass; production dependency audit reports no known vulnerabilities.
+
+See SECURITY_REVIEW.md for findings, verification scope and remaining release checks. `supabase/003_lessons_100.sql` is prepared but **not applied**; it extends the deployed trigger without replacing its other safety checks and inserts new lessons without overwriting existing courses. No live database, deployment or audience changes were made. Live authenticated/security acceptance and earlier release requirements remain open; do not label the published website fully ready on the basis of these local checks.
+
+## Publication preparation — 2026-11-13
+
+The owner reported successful execution of the separate unlock-to-100 SQL and `004_lesson_content_only.sql` in Supabase. Do not rerun `003_lessons_100.sql`: the guard has already been extended. This is owner-reported execution; live authenticated acceptance remains unverified. GitHub CLI authentication now succeeds after allowing api.github.com. Local 17 tests, typecheck and production build passed again before publication through the existing GitHub Pages workflow.
