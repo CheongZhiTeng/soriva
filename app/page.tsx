@@ -42,10 +42,6 @@ const nav = [{
   name: '学习日历',
   icon: ChartNoAxesCombined
 }, {
-  id: 'help',
-  name: '帮助与反馈',
-  icon: Info
-}, {
   id: 'lessons',
   name: '学习课程',
   icon: BookOpen
@@ -167,14 +163,16 @@ function Workspace() {
   useEffect(() => {
     if ('speechSynthesis' in window) speechSynthesis.getVoices();
   }, []);
+  const studySeconds = useRef(0);
+  useEffect(() => { studySeconds.current = 0; }, [user?.id]);
   useEffect(() => {
     if (!j.ready || !['lessons', 'vocabulary', 'hiragana', 'katakana', 'quiz', 'daily', 'review', 'listening'].includes(page) || !demo && !user) return;
-    let count = 0;
+    let savingSession = false;
     const id = setInterval(() => {
       if (document.visibilityState === 'visible' && document.hasFocus()) {
-        count++;
-        if (count === 30) {
-          count = 0;
+        studySeconds.current++;
+        if (studySeconds.current >= 30 && !savingSession) {
+          savingSession = true;
           const session = {
             id: crypto.randomUUID(),
             at: new Date().toISOString(),
@@ -183,7 +181,7 @@ function Workspace() {
           updateRef.current('session', session, s => ({
             ...s,
             sessions: [...s.sessions, session]
-          })).catch(() => {});
+          })).then(() => { studySeconds.current = Math.max(0, studySeconds.current - 30); }).catch(() => {}).finally(() => { savingSession = false; });
         }
       }
     }, 1000);
@@ -209,7 +207,7 @@ function Workspace() {
   }}><div className="app-shell"><a className="skip-link" href="#main-content">跳到内容 / Skip to content</a><aside className={cn('sidebar', menu && 'mobile-open')}><a className="brand" href="#" onClick={e => {
           e.preventDefault();
           go('dashboard');
-        }}><div className="brand-mark">S</div><div><b>Soriva<span className="brand-dot">.</span></b><small>{t("自由 · 探索")}</small></div></a><div className="nav-caption">LEARN AT YOUR OWN PACE</div><nav aria-label="主导航 / Main navigation">{nav.map(n => <button className={cn('nav-item', page === n.id && 'active')} aria-current={page === n.id ? 'page' : undefined} key={n.id} onClick={() => go(n.id)}>{n.icon ? <n.icon size={19} /> : <span className="kana-icon">あ</span>}<span>{t(n.name)}</span>{n.id === 'lessons' && <span className="nav-count">{String(published.length).padStart(2, '0')}</span>}</button>)}</nav><div className="sidebar-bottom"><div className="little-note"><Sprout size={23} /><p>{t("每天一小步，")}<br />{t("也是向前的旅途。")}</p><small>少しずつ、一歩ずつ。</small></div><button className={cn('nav-item', page === 'settings' && 'active')} onClick={() => go('settings')}><Settings size={19} />{t("偏好设置")}</button>{(demo || admin) && <button className={cn('nav-item', page === 'admin' && 'active')} onClick={() => go('admin')}><ShieldCheck size={19} />{t("课程管理")}{demo && <small>{t("演示")}</small>}</button>}<button className="profile" onClick={() => go('settings')}><span className="avatar"><Avatar value={state.profile?.avatar} /></span><span><b>{state.profile?.name || user.email?.split('@')[0]}</b><small>{t("日语初学者 · Beginner")}</small></span><ChevronRight size={15} /></button></div></aside>{menu && <button className="mobile-backdrop" aria-label={t("关闭菜单")} onClick={() => setMenu(false)} />}<div className="main-shell"><header className="topbar"><div className="breadcrumb"><button className="icon-btn mobile-menu" aria-label={t("打开菜单")} onClick={() => setMenu(true)}><Menu size={20} /></button><span>{t("我的学习空间")}</span><ChevronRight size={13} /><b>{t(nav.find(n => n.id === page)?.name ?? (page === 'settings' ? t("偏好设置") : t("课程管理")))}</b></div><div className="top-actions"><LanguageSwitch onChange={l => void save('locale', {}, s => ({
+        }}><div className="brand-mark">S</div><div><b>Soriva<span className="brand-dot">.</span></b><small>{t("自由 · 探索")}</small></div></a><div className="nav-caption">LEARN AT YOUR OWN PACE</div><nav aria-label="主导航 / Main navigation">{nav.map(n => <button className={cn('nav-item', page === n.id && 'active')} aria-current={page === n.id ? 'page' : undefined} key={n.id} onClick={() => go(n.id)}>{n.icon ? <n.icon size={19} /> : <span className="kana-icon">あ</span>}<span>{t(n.name)}</span>{n.id === 'lessons' && <span className="nav-count">{String(published.length).padStart(2, '0')}</span>}</button>)}</nav><div className="sidebar-bottom"><div className="little-note"><Sprout size={23} /><p>{t("每天一小步，")}<br />{t("也是向前的旅途。")}</p><small>少しずつ、一歩ずつ。</small></div><button className={cn('nav-item', page === 'settings' && 'active')} onClick={() => go('settings')}><Settings size={19} />{t("偏好设置")}</button>{(demo || admin) && <button className={cn('nav-item', page === 'admin' && 'active')} onClick={() => go('admin')}><ShieldCheck size={19} />{t("课程管理")}{demo && <small>{t("演示")}</small>}</button>}<button className={cn('nav-item', page === 'help' && 'active')} aria-current={page === 'help' ? 'page' : undefined} onClick={() => go('help')}><Info size={19} />{t("帮助与反馈")}</button><button className="profile" onClick={() => go('settings')}><span className="avatar"><Avatar value={state.profile?.avatar} /></span><span><b>{state.profile?.name || user.email?.split('@')[0]}</b><small>{t("日语初学者 · Beginner")}</small></span><ChevronRight size={15} /></button></div></aside>{menu && <button className="mobile-backdrop" aria-label={t("关闭菜单")} onClick={() => setMenu(false)} />}<div className="main-shell"><header className="topbar"><div className="breadcrumb"><button className="icon-btn mobile-menu" aria-label={t("打开菜单")} onClick={() => setMenu(true)}><Menu size={20} /></button><span>{t("我的学习空间")}</span><ChevronRight size={13} /><b>{t(nav.find(n => n.id === page)?.name ?? (page === 'help' ? t("帮助与反馈") : page === 'settings' ? t("偏好设置") : t("课程管理")))}</b></div><div className="top-actions"><LanguageSwitch onChange={l => void save('locale', {}, s => ({
               ...s,
               locale: l
             }), '')} /><span className="mode-pill"><i />{demo ? t("本地演示模式") : user ? j.busy ? t("正在保存…") : j.error ? t("同步异常") : t("云端账户已连接") : t("登录后云端保存")}</span><button className="icon-btn" aria-label={t("切换明暗主题")} onClick={() => save('preferences', {
@@ -230,5 +228,5 @@ function Workspace() {
               opacity: 0
             }} transition={{
               duration: reduceMotion ? 0 : .15
-            }}>{page === 'path' ? <Path /> : page === 'daily' || page === 'review' || page === 'listening' ? <Practice key={page + user.id} mode={page} /> : page === 'calendar' ? <Calendar /> : page === 'help' ? <Help /> : page === 'dashboard' ? <Dashboard /> : page === 'lessons' ? <Lessons /> : page === 'vocabulary' ? <Vocabulary /> : page === 'hiragana' ? <KanaPractice script="hiragana" /> : page === 'katakana' ? <KanaPractice script="katakana" /> : page === 'quiz' ? <Quiz /> : page === 'progress' ? <Progress /> : page === 'settings' ? <Preferences /> : <Admin />}</motion.div></AnimatePresence>}<footer><span>Soriva <i>·</i> 少しずつ、一歩ずつ。</span><span><Flower2 size={13} />{t("按照自己的节奏，慢慢前行")}</span></footer></main></div>{notice && <div className="toast" role="status"><Info size={18} />{notice}<button aria-label={t("关闭通知")} onClick={() => notify('')}><X size={15} /></button></div>}</div></JourneyContext.Provider>;
+            }}>{page === 'path' ? <Path /> : page === 'daily' || page === 'review' || page === 'listening' ? <Practice key={page + user.id} mode={page} /> : page === 'calendar' ? <Calendar /> : page === 'help' ? <Help /> : page === 'dashboard' ? <Dashboard /> : page === 'lessons' ? <Lessons /> : page === 'vocabulary' ? <Vocabulary /> : page === 'hiragana' ? <KanaPractice script="hiragana" /> : page === 'katakana' ? <KanaPractice script="katakana" /> : page === 'quiz' ? <Quiz /> : page === 'progress' ? <Progress /> : page === 'settings' ? <Preferences /> : <Admin />}</motion.div></AnimatePresence>}<footer><button className="text-link" onClick={() => go('help')}>{t("帮助与反馈")}</button><span>Soriva <i>·</i> 少しずつ、一歩ずつ。</span><span><Flower2 size={13} />{t("按照自己的节奏，慢慢前行")}</span></footer></main></div>{notice && <div className="toast" role="status"><Info size={18} />{notice}<button aria-label={t("关闭通知")} onClick={() => notify('')}><X size={15} /></button></div>}</div></JourneyContext.Provider>;
 }
